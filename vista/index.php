@@ -341,8 +341,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Perfiles</a></li>
+            <li><a onclick="cargar_contenido('contenido_principal','usuarios/vista_usuarios.php')"><i class="fa fa-circle-o"></i> Usuarios</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -641,4 +641,21 @@
 <!-- Bootstrap WYSIHTML5 -->
 <script src="../plantilla/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
-<script src="../plantilla/bower_components/jquery-slimscroll/jquery.slimscro
+<script src="../plantilla/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../plantilla/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../plantilla/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../plantilla/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../plantilla/dist/js/demo.js"></script>
+
+
+<script>
+	function cargar_contenido(contenedor,contenido) {
+		$("#"+contenedor).load(contenido);
+	}
+</script>
+</body>
+</html>
