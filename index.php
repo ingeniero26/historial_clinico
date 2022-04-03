@@ -1,6 +1,6 @@
 <?php 
 
-header('Location: vista/index.php');
+header('Location: Login/index.php');
 
 
 
